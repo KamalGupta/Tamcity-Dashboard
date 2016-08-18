@@ -1,0 +1,11 @@
+api_url: "https://teamcity_URL/httpAuth/app/rest/"
+http_user: "username"
+http_password: "password"
+repositories:
+  project1-id1: provide project1_job_id1
+  project1-id2: provide project1_job_id2
+  project1-id3: provide project1_job_id3
+  project1-id4: provide project1_job_id4
+  project2-id1: provide project2_job_id1
+  project2-id2: provide project2_job_id2
+
