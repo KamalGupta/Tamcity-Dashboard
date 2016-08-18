@@ -1,0 +1,89 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$value-color:              #FFF;
+$background-color:         darkgrey;
+$background-error-color:   #A31F1F;
+$background-passed-color:  #7ED162;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$label-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-list styles
+// ----------------------------------------------------------------------------
+.widget-team-city{
+
+  background-color: $background-color;
+  vertical-align: top;
+
+  img {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    opacity: 0.05;
+    max-width: 80%;
+    max-height: 80%;
+  }
+
+  .title {
+    color:$value-color;
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  ol, ul {
+    margin: 0 15px;
+    text-align: left;
+    color: $label-color;
+  }
+
+  ul.value{
+    text-align: right;
+  }
+
+  ol {
+    list-style-position: inside;
+  }
+
+  li {
+    margin-bottom: 5px;
+    line-height: 40px;
+  }
+
+  .list-nostyle {
+    list-style: none;
+  }
+
+  .label {
+    color: $value-color;
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  .value {
+    font-weight: 500;
+    color: $value-color;
+    font-size: 25px;
+    float: right;
+  }
+
+  .updated-at {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  .more-info {
+    color: $moreinfo-color;
+  }
+
+  &.FAILURE,
+  &.ERROR {
+    background-color: $background-error-color;
+  }
+
+  &.SUCCESS {
+    background-color: $background-passed-color;
+  }
+
+}
