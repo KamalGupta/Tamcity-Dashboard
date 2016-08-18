@@ -1,0 +1,20 @@
+<script type='text/javascript'>
+    $(function() {
+        // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+        Dashing.widget_base_dimensions = [390, 470]
+    });
+</script>
+
+<% content_for :title do %>Teamcity Dashboard<% end %>
+<h1><a style="color:#2E96CD; float:left; margin-left:25px;"href="/main">Home</a><a style="color:#2E96CD; float:left; margin-left:20px;"href="/project1">Project1</a> PROJECT2   TEAMCITY   JOBS </h1>
+
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="project2-id1" data-view="TeamCity" data-unordered="true" data-title="PROJECT2_JOB_NAME1 STATUS"></div>
+    </li>
+    <li data-row="1" data-col="3" data-sizex="2" data-sizey="1">
+      <div data-id="project2-id2" data-view="TeamCity" data-unordered="true" data-title="PROJECT2_JOB_NAME2 STATUS"></div>
+    </li>
+  </ul>
+</div>
