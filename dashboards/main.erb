@@ -1,0 +1,33 @@
+<script type='text/javascript'>
+    $(function() {
+        Dashing.widget_base_dimensions = [390, 470]
+    });
+</script>
+
+<% content_for :title do %>Teamcity Dashboard<% end %>
+<div align="center" style="background-color: #49779B; width:1590px; color:#FFFFFF; height:100px; line-height: 100px; font-size: 40px; margin:0 auto;">
+  TEAMCITY PROJECTS
+</div>
+
+<style type='text/css'>
+  .e:hover{
+      background-color:green
+  }
+</style>
+
+<div class="gridster">
+  <ul>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div class="e" data-id="project1" data-view="Text" onclick="location.href='/project1';"  data-title="PROJECT1 NAME"></div>
+    </li>
+    <li data-row="1" data-col="3" data-sizex="2" data-sizey="1">
+      <div class="e" data-id="project2" data-view="Text" onclick="location.href='/project2';" data-title="PROJECT2 NAME"></div>
+    </li>
+    <li data-row="2" data-col="1" data-sizex="2" data-sizey="1">
+      <div class="e" data-id="project3" data-view="Text" onclick="location.href='/preProdRelDetails';" data-title="Pre Prod Release Details"></div>
+    </li>
+    <li data-row="2" data-col="3" data-sizex="2" data-sizey="1">
+      <div class="e" data-id="project4" data-view="Text" onclick="location.href='/prodRelDetails';" data-title="Prodution Relesae Details"></div>
+    </li>
+  </ul>
+</div>
